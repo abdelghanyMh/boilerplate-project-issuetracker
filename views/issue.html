@@ -42,6 +42,7 @@
             const queryString = window.location.search;
             const searchParams = new URLSearchParams(queryString);
             const requestdata = {
+              _id: searchParams.get('_id'),
                 open: searchParams.get('open'),
                 issue_title: searchParams.get('issue_title'),
                 issue_text: searchParams.get('issue_text'),
